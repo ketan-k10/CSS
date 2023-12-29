@@ -1,0 +1,41 @@
+/*  #ff3368; #ecfdff; */
+
+h1 {
+  color: #ff3368;
+}
+
+
+.para {
+  color: brown;
+  /* font-size: 32px; */
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+/* p{
+  background-color: #ccc;
+} */
+
+/* #para1 {
+   background-color: aqua;
+} */
+
+.para:hover{
+  background-color: blanchedalmond;
+}
+
+#btn {
+  background-color: #ff3368;
+  color: #fff;
+}
+
+#btn:hover {
+  background-color: black;
+  color: white;
+}
+
+h1:hover {
+  color: blue;
+}
+
+/** If the two different selector point to same element than id will be given preference than class.
+/** Id is given preference then class then the tag name.
