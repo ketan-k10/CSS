@@ -1,0 +1,138 @@
+/** ------------------------------------- -->
+/**  POSITION IN CSS  
+/** ---------------------------------------- --> */
+
+/*? The position property in CSS is used to control the positioning of elements within a web page. It defines how an element should be placed relative to its normal position in the document flow or relative to its parent or containing elements. */
+
+/*? position: relative; */
+/*? Definition: Elements with position: relative; are positioned relative to their normal position in the document flow. */
+
+/*TODO New Properties Unlocked  */
+/*? Properties: top, right, bottom, left: Offset the element from its normal position. */
+
+/*? position: absolute; */
+/*? Definition: Elements with position: absolute; are positioned relative to the nearest positioned ancestor or the initial containing block. */
+
+/** ---------------------------------------- --> */
+
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Urbanist",sans-serif;
+}
+body{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 10rem;
+}
+
+#main-heading {
+    color: #1e1403;
+    text-align: left;
+    margin-bottom: 2rem;
+    
+  }
+
+
+.parent-div{
+    width: 700px;
+    height: 600px;
+    background: linear-gradient(to bottom left, rgb(58, 188, 136) , rgb(226, 72, 134),rgb(81, 216, 158));
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: #1e1403 -3px 4px 19px;
+    border: 3px solid #1e1403;
+    
+}
+
+.child {
+    width: 100px;
+    height: 90px;
+    background: linear-gradient(to bottom right, rgb(29, 233, 36),rgb(29, 114, 233),rgb(255, 169, 8));
+    border: 3px solid #1e1403;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: grid;
+    place-items: center;
+    color: rgb(18, 18, 17);
+    font-weight: bold;
+    box-shadow: #1e1403 -3px 4px 19px;
+}
+
+
+/* 
+.child:nth-child(2),
+.child:nth-child(4) {
+  background: linear-gradient(to right, #3cd3ad, #4cb8c4);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+} */
+
+/*!  ********************************************  Main code starts here. ********************** */
+
+
+.parent-div{
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.child{
+    position: absolute;
+
+}
+
+
+/* top, left, bottom, right  */
+
+
+.child-1{
+    top: 0;
+    left: 0;
+}
+
+.child-2{
+    top: 0;
+    right: 0;
+}
+
+.child-3{
+    bottom: 0;
+    left: 0;
+}
+
+.child-4{
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+/** ------------------------------------- -->
+/**  POSITION INTERVIEW QUESTIONS IN CSS  
+/** ---------------------------------------- --> */
+
+/*? 1: What is the default positioning of an element with position: absolute;? ⭐⭐ */
+/* By default, an element with position: absolute; is positioned at the top-left corner of its containing block without any offsets. */
+
+/*? 2: How can you ensure that an element with position: absolute; is positioned relative to the entire viewport? */
+/*? To position an element with position: absolute; relative to the viewport, ensure that none of its ancestors have a position property set to relative, absolute, fixed, or sticky. This way, it will use the viewport as its containing block. */
+
+
+
+
